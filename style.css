@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", Helvetica, sans-serif;
+	border: none;
+}
+
+body {
+	background-color: #34363F;
+}
+
+header {
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Arvo", serif;
+	font-size: 48px;
+	color: #b4b8d9;
+}
+
+footer {
+	color: #b4b8d9;
+	text-align: center;
+	font-size: 11px;
+	margin: 50px 0 10px 0;
+}
+
+#container {
+	width: max-content;
+	box-shadow: 0 0 25px #17181c;
+	min-width: max-content;
+	border-radius: 8px;
+	margin: 0 auto;
+	background-color: #59648f;
+	padding: 15px;
+	display: grid;
+	justify-content: center;
+	grid-gap: 5px;
+	grid-template-areas:
+		"equ equ equ equ"
+		"ans ans ans ans"
+		"ac back back plusmin"
+		"seven eight nine divide"
+		"four five six mult"
+		"one two three subt"
+		"deci zero equals sum";
+}
+
+.btn {
+	border-radius: 3px;
+	background-color: #b4b8d9;
+	color: #373740;
+	border: 1px solid #373740;
+	padding: 5px 10px;
+	height: 70px;
+	min-width: 98px;
+	font-size: 23px;
+}
+
+.btn:hover {
+	background-color: #d5d8ff;
+}
+
+.ops {
+	background-color: #e6d2d1;
+	color: #5c332d;
+	border: 1px solid #5c332d;
+	font-size: 22px;
+}
+
+.ops:hover {
+	background-color: #ffe5e3;
+}
+
+#equation-display {
+	overflow: hidden;
+	border-radius: 3px;
+	height: 30px;
+	max-width: 395px;
+	padding: 0 5px;
+	grid-area: equ;
+	background-color: #b4b8d9;
+	color: #373740;
+	text-align: right;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+#display {
+	height: 45px;
+	border-radius: 3px;
+	padding: 0 5px;
+	font-size: 37px;
+	grid-area: ans;
+	text-align: right;
+	background-color: black;
+	color: white;
+}
+
+#ac {
+	grid-area: ac;
+}
+
+#back {
+	grid-area: back;
+}
+
+#plusmin {
+	grid-area: plusmin;
+}
+
+#mult {
+	grid-area: mult;
+}
+
+#divide {
+	grid-area: divide;
+}
+
+#subt {
+	grid-area: subt;
+}
+
+#sum {
+	grid-area: sum;
+}
+
+#deci {
+	grid-area: deci;
+}
+
+#equals {
+	grid-area: equals;
+}
+
+#zero {
+	grid-area: zero;
+}
+
+#one {
+	grid-area: one;
+}
+
+#two {
+	grid-area: two;
+}
+
+#three {
+	grid-area: three;
+}
+
+#four {
+	grid-area: four;
+}
+
+#five {
+	grid-area: five;
+}
+
+#six {
+	grid-area: six;
+}
+
+#seven {
+	grid-area: seven;
+}
+
+#eight {
+	grid-area: eight;
+}
+
+#nine {
+	grid-area: nine;
+}
+
+@media screen and (max-width: 660px) {
+  	.btn {
+	padding: 2px 5px;
+	height: 40px;
+	min-width: 65px;
+	font-size: 15px;
+}
+
+	#equation-display {
+	height: 30px;
+	max-width: 265px;
+	padding: 0 5px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+#display {
+	height: 45px;
+	padding: 0 5px;
+	font-size: 24px;
+	line-height: 45px;
+}
+
+}
